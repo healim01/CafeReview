@@ -13,11 +13,11 @@
 		delete from CAFEREVIEW where id=#{id}
 	</delete>
 	
-	<select id="getReview" resultType="review">
+	<select id="getReview" resultType= "review">
 		select * from CAFEREVIEW where id=#{id}
 	</select>
 	
-	<select id="getReviewList" resultType="review">
+	<select id="getReviewList" resultType= "review">
 		select * from CAFEREVIEW order by id desc
 	</select>
 </mapper>
