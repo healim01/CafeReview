@@ -5,6 +5,6 @@
 <configuration>
 	<typeAliases>
 		<typeAlias alias="review" type="com.cafe.review.ReviewVO" />
+		<typeAlias alias="user" type="com.cafe.review.UserVO" />
 	</typeAliases>
-
 </configuration>

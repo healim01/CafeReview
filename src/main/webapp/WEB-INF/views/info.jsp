@@ -42,16 +42,6 @@ th {
   width: 20%;
 }
 
-/* #info td {
-	border-bottom: 1px solid #444444;
-    border-right: 1px solid #444444;
-}
-
-#info td.top {
-	border-top: 1px solid #444444;
-	border-bottom: 1px solid #444444;
-    border-right: 1px solid #444444;
-} */
 
 #button:hover {background-color: #036635;}
 
@@ -67,12 +57,10 @@ th {
 			<tr><th> 음료 이름 </th><td>${reviewVO.drink }</td></tr>
 			<tr><th> 음료 가격 </th><td>${reviewVO.price }</td></tr>
 			<tr><th> 음료 별점 </th><td>${reviewVO.star }</td></tr>
-			<tr><th> 음료 사진 </th><td>${reviewVO.photo }</td></tr>
 			<tr><th> 음료 리뷰 </th><td>${reviewVO.review }</td></tr>
 		</table>
 		<br>
 		<input id=button type="button" value="돌아가기" onclick="history.back()">
 	</form:form>
 </body>
-</html>
 </html>

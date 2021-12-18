@@ -7,13 +7,8 @@
 	<title>Home</title>
 </head>
 <body>
-<h1>
-	한동대 교내 카페 리뷰 
-</h1>
 
-<P>  현재 시각은 ${serverTime}. </P>
-<p> 당신의 솔직한 후기를 담아주세요!! </p>
+	<jsp:forward page="login.jsp" />
 
-<p> <a href="list"> </a> 리뷰 구경하러 가기 ! </p>
 </body>
 </html>

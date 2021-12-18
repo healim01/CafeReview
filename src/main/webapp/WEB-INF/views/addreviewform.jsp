@@ -54,14 +54,13 @@ button:hover {background-color: #036635;}
 </head>
 <body>
 	<h1> 한동대 교내 카페 음료 리뷰 </h1>
-	<h2>새로운 솔직 리뷰 추가하기</h2>
+	<h3> 새로운 리뷰 추가하기</h3>
 	<form action="addok" method="post">
 		<table>
 			<tr><th> 카페 이름 </th><td><input id="f1" type="text" name="cafe" placeholder="cafe"/></td></tr>
 			<tr><th> 음료 이름 </th><td><input id="f1" type="text" name="drink" placeholder="drink"/></td></tr>
 			<tr><th> 음료 가격 </th><td><input id="f1" type="text" name="price" placeholder="price"/></td></tr>
 			<tr><th> 음료 별점 </th><td><input id="f1" type="text" name="star" placeholder="star"/></td></tr>
-			<tr><th> 음료 사진 </th><td><input id="f1" type="file" name="photo" placeholder="photo"/></td></tr>
 			<tr><th> 음료 리뷰 </th><td><textarea id="f2" cols="100" rows="8" name="review" placeholder="review"></textarea></td></tr>
 		</table>
 		<br>

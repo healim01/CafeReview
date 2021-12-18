@@ -53,7 +53,7 @@ table{
 </head>
 <body>
 	<h1>한동대 교내 카페 리뷰</h1>
-	<h2>리뷰 수정하기</h2>
+	<h3>리뷰 수정하기</h3>
 	
 	<form:form commandName="reviewVO" method="POST" action="../editok">
 		<form:hidden path="id"/>
@@ -62,7 +62,6 @@ table{
 			<tr><th> 음료 이름 </th><td><form:input id="f1" path="drink"/></td></tr>
 			<tr><th> 음료 가격 </th><td><form:input id="f1" path="price"/></td></tr>
 			<tr><th> 음료 별점 </th><td><form:input id="f1" path="star"/></td></tr>
-			<tr><th> 음료 사진 </th><td><form:input id="f1" path="photo"/></td></tr>
 			<tr><th> 음료 리뷰 </th><td><form:textarea id="f2" cols="100" rows="8" path="review"/></td></tr>
 		</table>
 		<br>

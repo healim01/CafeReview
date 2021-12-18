@@ -4,7 +4,7 @@
 	"http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias alias="report" type="com.book.report.ReportVO" />
+		<typeAlias alias="report" type="com.cafe.review.ReviewVO" />
 	</typeAliases>
 
 </configuration>
