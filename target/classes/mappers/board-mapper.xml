@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Review">
+	<insert id="insertReview">
+		insert into CAFEREVIEW (cafe, drink, price, star, photo, review) values (?, ?, ?, ?, ?, ?)
+	</insert>
+	
+	<update id="updateReview">
+		update CAFEREVIEW set cafe=?, drink=?, price=?, star=?, photo=?, review=? where id=?
+	</update>
+	
+	<delete id="deleteReview">
+		delete from CAFEREVIEW where id=?
+	</delete>
+	
+	<select id="getReview" resultType="review">
+		select * from CAFEREVIEW where id=?
+	</select>
+	
+	<select id="getReviewList" resultType="review">
+		select * from CAFEREVIEW order by id desc
+	</select>
+</mapper>
