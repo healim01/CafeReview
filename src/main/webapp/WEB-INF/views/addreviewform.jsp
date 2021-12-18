@@ -45,8 +45,8 @@ th {
 	border: none;
 }
 
-button:hover {background-color: #036635;}
-#bt1:hover {background-color: #036635;}
+button:hover {background-color: #00a352;}
+#bt1:hover {background-color: #00a352;}
 
 
 

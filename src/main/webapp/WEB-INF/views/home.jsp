@@ -8,7 +8,14 @@
 </head>
 <body>
 
-	<jsp:forward page="login.jsp" />
+	<h1>
+	한동대 교내 카페 리뷰 
+	</h1>
+
+	<P>  현재 시각은 ${serverTime}. </P>
+	<p> 당신의 솔직한 후기를 담아주세요!! </p>
+		
+	<a href="login/login">Login</a>
 
 </body>
 </html>

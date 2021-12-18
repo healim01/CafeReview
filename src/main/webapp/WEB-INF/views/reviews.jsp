@@ -43,7 +43,7 @@ button {
   	border:1px  #006bb3 solid;
   	border-radius: 7px;
 }
-button:hover {background-color: #036635;}
+button:hover {background-color: #00a352;}
 </style>
 <script>
 	function delete_ok(id){

@@ -20,8 +20,9 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="/loginOk",method=RequestMethod.POST) 
-	public String loginCheck(HttpSession session,UserVO vo) {
+	public String loginCheck(HttpSession session, UserVO vo) {
 		String returnURL = "";
+		
 		if ( session.getAttribute("login") != null ){
 			session.removeAttribute("login");
 		}

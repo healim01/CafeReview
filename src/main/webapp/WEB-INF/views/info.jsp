@@ -23,7 +23,7 @@ table{
 	width: 80%;
 }
 
-#button {
+button {
 	color: white; 
 	font-weight: bold;
 	text-align: center;
@@ -43,7 +43,7 @@ th {
 }
 
 
-#button:hover {background-color: #036635;}
+#button:hover {background-color: #00a352;}
 
 </style>
 </head>

@@ -22,10 +22,14 @@ label{
 	width:200px
 }
 
-button{ 
-	background-color: #036635;
-	color: white;
-	font-size:20px
+button {
+	color: white; 
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+  	background-color: #036635;
+  	border:1px  #006bb3 solid;
+  	border-radius: 7px;
 }
 
 </style>
@@ -36,7 +40,7 @@ button{
 
 	<div style='width:100%;text-align:center;padding-top:100px'>
 		<form method="post" action="loginOk">
-			<img src='../resources/img/coffee.png' width="300"/>
+			<img src="./resources/img/coffee.png" width="300"/>
 			<div> <label>User ID : </label> 
 			<input type='text' name='userid' /> </div> 
 			<div><label>Password : </label>
