@@ -32,6 +32,11 @@ button {
 	text-align: center;
 }
 
+input {
+	border : 1px solid black;
+	boder-radius : 10px;
+}
+
 </style>
 
 </head>
