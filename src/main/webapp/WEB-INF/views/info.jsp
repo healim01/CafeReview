@@ -24,13 +24,13 @@ table{
 }
 
 button {
-	color: white; 
-	font-weight: bold;
-	text-align: center;
 	padding: 5px;
   	background-color: #036635;
-  	border:1px  #006bb3 solid;
-  	border-radius: 7px;
+  	border:1px  #036635 solid;
+  	border-radius: 10px;
+  	color: white; 
+	font-weight: bold;
+	text-align: center;
 }
 
 th {	
@@ -43,7 +43,10 @@ th {
 }
 
 
-#button:hover {background-color: #00a352;}
+#button:hover {
+	background-color: #00a352;
+	border-radius: 10px;
+}
 
 </style>
 </head>

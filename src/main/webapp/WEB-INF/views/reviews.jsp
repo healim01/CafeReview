@@ -35,15 +35,20 @@ body {
   color: white;
 }
 button {
-	color: white; 
-	font-weight: bold;
-	text-align: center;
 	padding: 5px;
   	background-color: #036635;
-  	border:1px  #006bb3 solid;
-  	border-radius: 7px;
+  	border:1px  #036635 solid;
+  	border-radius: 10px;
+  	color: white; 
+	font-weight: bold;
+	text-align: center;
 }
-button:hover {background-color: #00a352;}
+
+button:hover {
+	background-color: #00a352;
+	border-radius: 10px;
+}
+
 </style>
 <script>
 	function delete_ok(id){
@@ -52,6 +57,7 @@ button:hover {background-color: #00a352;}
 	}
 </script>
 </head>
+
 <body>
 <h1> 한동대 교내 카페 리뷰 </h1>
 

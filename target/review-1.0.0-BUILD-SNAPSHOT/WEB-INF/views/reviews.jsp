@@ -7,8 +7,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title> Cafe Review List</title>
 <style>
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: 'ImcreSoojin';
+}
 #list {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
@@ -23,19 +31,24 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #006bb3;
+  background-color: #036635;
   color: white;
 }
 button {
-	color: white; 
+	padding: 5px;
+  	background-color: #036635;
+  	border:1px  #036635 solid;
+  	border-radius: 10px;
+  	color: white; 
 	font-weight: bold;
 	text-align: center;
-	padding: 5px;
-  	background-color: #006bb3;
-  	border:1px  #006bb3 solid;
-  	border-radius: 7px;
 }
-button:hover {background-color: #003f69;}
+
+button:hover {
+	background-color: #00a352;
+	border-radius: 10px;
+}
+
 </style>
 <script>
 	function delete_ok(id){
@@ -44,6 +57,7 @@ button:hover {background-color: #003f69;}
 	}
 </script>
 </head>
+
 <body>
 <h1> 한동대 교내 카페 리뷰 </h1>
 
@@ -65,7 +79,7 @@ button:hover {background-color: #003f69;}
 		<td>${u.drink}</td>
 		<td>${u.price}</td>
 		<td>${u.star}</td>
-		<td><a href="more/${u.id}">More</a>
+		<td><a href="info/${u.id}">Info</a>
 		<td><a href="editpost/${u.id}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.id}')">Delete</a></td>
 	</tr>

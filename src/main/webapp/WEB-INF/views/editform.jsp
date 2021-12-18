@@ -21,13 +21,13 @@ table{
 	width: 80%;
 }
 #button {
-	color: white; 
-	font-weight: bold;
-	text-align: center;
 	padding: 5px;
   	background-color: #036635;
-  	border:1px  #006bb3 solid;
-  	border-radius: 7px;
+  	border:1px  #036635 solid;
+  	border-radius: 10px;
+  	color: white; 
+	font-weight: bold;
+	text-align: center;
 }
 #edit th {	
   padding-top: 12px;
@@ -38,17 +38,20 @@ table{
   width: 20%;
 }
 
-#f1{
+#css1{
 	border: none;
 	padding-top: 12px;
 	padding-bottom: 12px;
 }
 
-#f2 {
+#css2 {
 	border: none;
 }
 
-#button:hover {background-color: #00a352;}
+#button:hover {
+	background-color: #00a352;
+	border-radius: 10px;
+}
 </style>
 </head>
 <body>
@@ -58,11 +61,11 @@ table{
 	<form:form commandName="reviewVO" method="POST" action="../editok">
 		<form:hidden path="id"/>
 		<table id="edit">
-			<tr><th> 카페 이름 </th><td><form:input id="f1" path="cafe"/></td></tr>
-			<tr><th> 음료 이름 </th><td><form:input id="f1" path="drink"/></td></tr>
-			<tr><th> 음료 가격 </th><td><form:input id="f1" path="price"/></td></tr>
-			<tr><th> 음료 별점 </th><td><form:input id="f1" path="star"/></td></tr>
-			<tr><th> 음료 리뷰 </th><td><form:textarea id="f2" cols="100" rows="8" path="review"/></td></tr>
+			<tr><th> 카페 이름 </th><td><form:input id="css1" path="cafe"/></td></tr>
+			<tr><th> 음료 이름 </th><td><form:input id="css1" path="drink"/></td></tr>
+			<tr><th> 음료 가격 </th><td><form:input id="css1" path="price"/></td></tr>
+			<tr><th> 음료 별점 </th><td><form:input id="css1" path="star"/></td></tr>
+			<tr><th> 음료 리뷰 </th><td><form:textarea id="css2" cols="100" rows="8" path="review"/></td></tr>
 		</table>
 		<br>
 		<input id=button type="submit" value="수정하기"/>
