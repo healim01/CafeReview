@@ -6,6 +6,16 @@
 <meta charset="UTF-8">
 <title>Add New Drink Review</title>
 <style>
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: 'ImcreSoojin';
+}
+
 button, #bt1 {
 	color: white; 
 	font-weight: bold;
@@ -51,6 +61,7 @@ button:hover {background-color: #036635;}
 			<tr><th> 음료 이름 </th><td><input id="f1" type="text" name="drink" placeholder="drink"/></td></tr>
 			<tr><th> 음료 가격 </th><td><input id="f1" type="text" name="price" placeholder="price"/></td></tr>
 			<tr><th> 음료 별점 </th><td><input id="f1" type="text" name="star" placeholder="star"/></td></tr>
+			<tr><th> 음료 사진 </th><td><input id="f1" type="file" name="photo" placeholder="photo"/></td></tr>
 			<tr><th> 음료 리뷰 </th><td><textarea id="f2" cols="100" rows="8" name="review" placeholder="review"></textarea></td></tr>
 		</table>
 		<br>

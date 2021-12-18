@@ -34,7 +34,7 @@ public class ReviewController {
 		return "redirect:list";
 	}
 	
-	@RequestMapping(value = "/more/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/info/{id}", method = RequestMethod.GET)
 	public String loadmore(@PathVariable("id") int id, Model model) {
 		ReviewVO reviewVO = cafeService.getReview(id);
 		model.addAttribute("reviewVO", reviewVO);
@@ -49,7 +49,7 @@ public class ReviewController {
 	}
 	
 	@RequestMapping(value = "/editok", method = RequestMethod.POST)
-	public String edidReviewOK(ReviewVO vo) {
+	public String editReviewOK(ReviewVO vo) {
 		int i = cafeService.updateReview(vo);
 		if (i == 0)
 			System.out.println("리뷰를 수정하지 못했습니다.");
